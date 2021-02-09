@@ -1,0 +1,23 @@
+.loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loader-circle {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 4px dotted #fed766;
+  box-sizing: border-box;
+  animation: loading-spinning 2s linear infinite;
+}
+
+@keyframes loading-spinning {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
